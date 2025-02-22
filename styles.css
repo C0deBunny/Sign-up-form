@@ -7,3 +7,153 @@
 	font-family: ProtestRiot-Regular;
 	src: url(/fonts/ProtestRiot-Regular.ttf);
 }
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	font-family: Delius-Regular, sans-serif;
+}
+
+#left-page {
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: url(/img/temple.jpg) top left/cover no-repeat;
+}
+
+#left-page header {
+	height: 20%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin-top: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		height: 80%;
+	}
+
+	p {
+		font-family: ProtestRiot-Regular, sans-serif;
+		font-size: 4rem;
+		color: rgb(255, 48, 48);
+	}
+}
+
+#left-page footer {
+	color: white;
+	text-align: center;
+	margin-bottom: 2vh;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 0.5rem 0;
+
+	a {
+		color: inherit;
+	}
+}
+
+#right-page {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgb(248, 248, 248);
+}
+
+#form-field {
+	padding: 2rem 3rem;
+	background-color: white;
+	-webkit-box-shadow: 0px 5px 8px 0px rgba(194, 194, 194, 1);
+	-moz-box-shadow: 0px 5px 8px 0px rgba(194, 194, 194, 1);
+	box-shadow: 0px 5px 8px 0px rgba(194, 194, 194, 1);
+	/* Shadow from https://www.cssmatic.com/box-shadow */
+
+	p {
+		margin: 0 0 3rem 0;
+		font-size: 2rem;
+		color: rgb(63, 63, 70);
+	}
+
+	#input-field {
+		display: flex;
+		width: 50%;
+		flex-wrap: wrap;
+		gap: 3rem;
+
+		div {
+			position: relative;
+		}
+	}
+
+	label {
+		position: absolute;
+		bottom: 2rem;
+		color: rgb(63, 63, 70);
+	}
+
+	input {
+		border: 1px solid grey;
+		border-radius: 0.5rem;
+		font-size: 1.2rem;
+		padding: 0.2rem;
+
+		&:focus {
+			box-sizing: border-box;
+			background-color: rgb(248, 248, 248);
+			border: 1px solid rgb(255, 48, 48);
+			box-shadow: 0 0 5px rgb(255, 48, 48);
+			outline: none;
+		}
+		&:hover {
+			background-color: rgb(248, 248, 248);
+		}
+		&:invalid {
+			border: 1px solid rgb(255, 48, 48);
+		}
+	}
+}
+
+#right-page button {
+	background-color: rgb(255, 48, 48);
+	color: white;
+	padding: 1rem 2rem;
+	font-family: Delius-Regular, sans-serif;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 0.5rem;
+	margin: 2rem 3rem;
+
+	-webkit-box-shadow: 4px 4px 8px 0px rgba(122, 122, 122, 1);
+	-moz-box-shadow: 4px 4px 8px 0px rgba(122, 122, 122, 1);
+	box-shadow: 4px 4px 8px 0px rgba(122, 122, 122, 1);
+	/* Shadow from https://www.cssmatic.com/box-shadow */
+
+	&:hover {
+		-webkit-box-shadow: 1px 1px 8px 0px rgba(89, 89, 89, 1);
+		-moz-box-shadow: 1px 1px 8px 0px rgba(89, 89, 89, 1);
+		box-shadow: 1px 1px 8px 0px rgba(89, 89, 89, 1);
+		/* Shadow from https://www.cssmatic.com/box-shadow */
+
+		background-color: rgb(228, 41, 41);
+	}
+}
+
+#right-page > p {
+	font-size: 1.2rem;
+	margin: 0 3rem;
+	font-weight: bold;
+	color: rgb(63, 63, 70);
+	width: 50%;
+
+	&:nth-child(3) {
+		margin: 1rem 0 3rem 3rem;
+	}
+
+	a {
+		color: rgb(228, 41, 41);
+	}
+}
