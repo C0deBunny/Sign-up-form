@@ -21,7 +21,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background: url(/img/temple.jpg) top left/cover no-repeat;
+	background: url(./img/temple.jpg) top left/cover no-repeat;
 }
 
 #left-page header {
